@@ -1,7 +1,7 @@
 {
   "name": "pronoun-adjuster",
   "version": "0.0.1",
-  "description": "Pronoun Adjuster for React",
+  "description": "Pronoun Adjuster",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

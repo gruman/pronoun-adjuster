@@ -1,21 +1,15 @@
-# React Elo
+# Pronoun Adjuster
  
-Get Elo rankings for your chess, backgammon, or other strategy games. Visit [NPM](https://www.npmjs.com/package/react-elo) for more info. 
+Inclusive language with one line of code.
 
 ## Install
 
-    yarn add react-elo
+    yarn add pronoun-adjuster
 
 or
 
-    npm install react-elo
+    npm install pronoun-adjuster
 
-## Usage
+## Usage Example
 
-    import { getElo } from 'react-elo/Elo';
-
-    console.log(getElo(1200, 1500, 1))
-
-    output: {winNewElo: 1218, loseNewElo: 1482}
-
-Match length defaults to 1. You can change it by adding the numer of matches as a third parameter.
+    adjustPronouns(text, p1, p2)

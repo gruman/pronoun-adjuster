@@ -1,14 +1,10 @@
-const getElo = (winner: number, loser: number, length: number = 1) => {
-  let d = winner - loser;
-  let elo = Math.ceil((4 * Math.sqrt(length)) / (1 + Math.pow(10, d * Math.sqrt(length / 2000))));
-
-  let d2 = loser - winner;
-  let elo2 = Math.ceil((4 * Math.sqrt(length)) / (1 + Math.pow(10, -d2 * Math.sqrt(length / 2000))));
-  
-  return {
-    winNewElo: winner + elo,
-    loseNewElo: loser - elo2
-  };
+const adjustPronouns = (text: string, pronoun1: string, pronoun2?: string): string => {
+  return text
+    .replace(/\[P1\]/g, (match, offset, fullText) => {
+      const isStart = offset === 0 || /[.?!]\s{0,3}$/.test(fullText.slice(0, offset));
+      return isStart ? pronoun1.charAt(0).toUpperCase() + pronoun1.slice(1) : pronoun1.toLowerCase();
+    })
+    .replace(/\[P2\]/g, pronoun2 ? pronoun2.toLowerCase() : '');
 };
 
-export default getElo;
+export default adjustPronouns;

@@ -1,7 +1,7 @@
 {
   "name": "pronoun-adjuster",
-  "version": "0.0.1",
-  "description": "Pronoun Adjuster",
+  "version": "0.1.0",
+  "description": "ronoun Adjuster takes variables and assigns the proper pronouns.",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,9 @@
   "keywords": [
     "typescript",
     "javascipt",
-    "package"
+    "package",
+    "pronoun",
+    "pronouns"
   ],
   "author": "Matthew Gruman",
   "license": "CC BY 4.0",

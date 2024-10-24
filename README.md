@@ -1,6 +1,6 @@
 # Pronoun Adjuster
  
-Inclusive language with one line of code. Pronoun Adjust takes variables and assigns the proper pronouns.
+Inclusive language with one line of code. Pronoun Adjuster takes variables and assigns the proper pronouns.
 
 ## Install
 
